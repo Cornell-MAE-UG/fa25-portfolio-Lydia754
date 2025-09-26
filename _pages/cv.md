@@ -24,7 +24,7 @@ Aspiring engineering student with a strong foundation in.... Passionate about ..
 
 - **Maggie L Walker Governor's School for Government and International Studies**  
   *High School Diploma*  
-  Graduation: [May, 2024]
+  Graduation: May, 2024
 
 ---
 
@@ -49,6 +49,16 @@ Aspiring engineering student with a strong foundation in.... Passionate about ..
 ---
 
 #### Work Experience
+**Cornell Electric Vehicles - Steering Subteam**  
+  [November, 2024] - [present]  
+  - Collaborated with 70+ engineers to build a hyper-efficient autonomous electric vehicle, coming in 5th on the track and winning two Off-track awards and $4500 from Shell Eco Marathon Americas competition.
+  - Developing autonomous steering system and benchtop with simulated load to test automated steering
+  - Designed and manufactured secure housing for devices experiencing up to 1.5 g forces and heavy vibration  
+- **VCU - Research Assistant**  
+  [January, 2024] - [July, 2024]  
+  - Performed fault injection experiment on quadcopter drones in VCU Electrical Engineering Lab 
+  - Contributing author on paper published in AIAA: Realization of a Pervasive Runtime Monitoring Architecture for In-Time Hazard Detection in UAM Systems
+
 - **[Company Name] - Intern**  
   [Month, Year] - [Month, Year]  
   - Responsibility 1  
@@ -63,8 +73,8 @@ Aspiring engineering student with a strong foundation in.... Passionate about ..
 ---
 
 #### Extracurricular Activities
-- Member of [Club/Organization Name]  
-- Volunteer for [Event/Organization Name]  
+- Member of Cornell Maker Club  
+- Volunteer for Heritage Humane Society  
 
 ---
 
