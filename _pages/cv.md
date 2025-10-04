@@ -36,13 +36,8 @@ Aspiring engineering student with a strong foundation in mechanics, thermodynami
 ---
 
 #### Projects
-- **[Project Title]**:  
-  *[Short Description]*  
-  - Key Achievement 1  
-  - Key Achievement 2  
-
-- **[Project Title]**:  
-  *[Short Description]*  
+- **[Autosteer system]**:  
+  *[Developed Autosteer, assembly, gearbox, and benchtop to accomplish autonomous steering in electric vehicle]*  
   - Key Achievement 1  
   - Key Achievement 2  
 
@@ -62,8 +57,8 @@ Aspiring engineering student with a strong foundation in mechanics, thermodynami
 ---
 
 #### Achievements & Certifications
-- [Certification Name], [Issuing Organization], [Year]  
-- [Achievement Name], [Competition/Event], [Year]  
+- AP Scholar with Distinction, College Board, 2024
+- Silver Award, Girl Scouts of America, 2018 
 
 ---
 
