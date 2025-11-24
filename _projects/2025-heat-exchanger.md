@@ -3,6 +3,7 @@ layout: project
 title: Heat Exchanger Analysis
 description: Thermodynamic Analysis of Heat Exchanger
 image: /assets/images/heatexchanger-images.png
+technologies: Google Sheets
 ---
 For Thermodynamics Class we were asked to analyze a thermodynamic device. I choose a heat exchanger which works by running 2 liquids of different heats through channels designed to maximize shared shared surface area between the two channels. This device is best analyzed as a control volume since the volume in the heat exchanger is constant.
 
@@ -12,6 +13,7 @@ We were also asked to analyze a change to the device and how it affects the devi
 ![Parallel vs Antiparallel]({{ "/assets/images/parallel_antiparallel.png" | relative_url }}){: .inline-image-r style="width: 300px"}
 
 #### Analysis
+
 **Assumptions**:  
     - Device is operating at Steady State
     - negligible delta KE and delta PE
