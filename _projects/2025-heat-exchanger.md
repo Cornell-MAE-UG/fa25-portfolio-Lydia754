@@ -13,12 +13,12 @@ We were also asked to analyze a change to the device and how it affects the devi
 ![Parallel vs Antiparallel]({{ "/assets/images/heatexchanger-images.png" | relative_url }}){: .inline-image-l}
 
 #### Analysis
-**[Assumptions]**:  
+**Assumptions**:  
     - Device is operating at Steady State
     - negligible delta KE and delta PE
     - Constant Cp
  
-**[Equations]**: 
-![Equations]({{ "/assets/images/egns.png" | relative_url }}){: .inline-image-l}
+**Equations**: 
+![Equations]({{ "/assets/images/eqns.png" | relative_url }}){: .inline-image-l}
 
 
