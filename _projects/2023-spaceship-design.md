@@ -1,13 +1,30 @@
 ---
 layout: project
-title: Spaceship Design
-description: Just a spaceship that I designed
-technologies: [SolidWorks, Machining]
-image: /assets/images/spaceship-design.jpg
+title: Heat Exchanger Analysis
+description: Thermodynamic Analysis of Heat Exchanger
+technologies: 
+image: /assets/images/heatexchanger-images.png
+---
+For a Thermodynamics Class we were asked to analyze a thermodynamic device. I choose a heat exchanger which works by running 2 liquids of different heats through channels designed to maximize shared shared surface area between the two channels. This device is best analyzed as a control volume since the volume in the heat exchanger is constant.
+
+#### Device Change
+We were also asked to analyze a change to the device and how it affects the device. For this change I chose to analyze the difference between Parralel and AntiParallel flow. Through this experimantal data of the change in method of flow, I observed a slight increase in the difference between inital and final temperatures for both the hot and cold flow through the heat exchanger in the antiparralel flow as compared to the parallel flow.
+
 ---
 
+image: /assets/images/parallel_antiparallel
 
-In 2021, NASA asked me to design a spaceship...Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec accumsan leo. Pellentesque ornare orci enim, vitae vestibulum nibh rutrum in. Donec pharetra risus nec ipsum fringilla, et mattis tortor auctor. Duis tortor ante, posuere ut odio a, scelerisque interdum purus. Aenean faucibus luctus est, sed bibendum tellus. Nulla et magna urna. Morbi a ipsum sollicitudin, rhoncus risus volutpat, ultricies nunc. Quisque mollis finibus ante id imperdiet. Quisque vehicula elit sit amet felis facilisis fermentum.
+---
+#### Analysis
+- **[Assumptions]**:  
+    - Device is operating at Steady State
+    - negligible delta KE and delta PE
+    - Constant Cp
+ 
+- **[Equations]**: 
 
-Aenean tincidunt aliquam arcu, in euismod dui dapibus eu. In placerat, mi et ultrices consequat, quam ligula cursus mauris, in semper neque nibh at est. Maecenas hendrerit dignissim porta. Phasellus nec fringilla dolor. Etiam efficitur nisi sit amet velit pharetra feugiat. Etiam ultrices turpis at leo semper, eleifend scelerisque neque malesuada. Aliquam molestie congue rhoncus. Donec blandit neque dolor, nec tristique mi pretium ac. Mauris tincidunt ullamcorper magna, nec pellentesque mi sagittis quis.
+---
 
+image: /assets/images/eqns.jpg
+
+---
