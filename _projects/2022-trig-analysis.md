@@ -19,5 +19,8 @@ This is how I solved the problem:
             x = 0.285
             This would produce a maximum Weight that could be lifted of 4588.5 lbs
 
+This problem was then expanded to include Beam deflection and chosing an appropriate geometry. I found maximum deflection and chose a cross sectional geometry that would cause vertical deflection to be less than 2% of the beam's length. The maximum deflection was found to be 0.0094mm. The cross section geometry chosen to fulfill these requirements was a hollow steel beam with an width of 50 mm, height of 25 mm, and wall thickness of 3mm.
+![Equations shown]({{ "/assets/images/DeflectionBeam.png" | relative_url }}){: .inline-image-r style="width: 300px"}            
+
 
 
