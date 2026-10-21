@@ -26,7 +26,7 @@ Aspiring engineering student with a strong foundation in mechanics, thermodynami
 
 **Cornell University**
 *Bachelor of Science in Mechanical and Aerospace Engineering*
-GPA: 2.7/4.0 | Graduation: May 2028
+GPA: 2.8/4.0 | Graduation: May 2028
 
 **Maggie L. Walker Governor's School for Government and International Studies**
 *High School Diploma*
