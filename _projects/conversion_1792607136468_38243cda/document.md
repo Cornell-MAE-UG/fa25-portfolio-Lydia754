@@ -1,5 +1,10 @@
-Lydia Woodall liw9@cornell.edu  
-Cornell Electric Vehicles Steering Lead 26-27'
+---
+layout: project
+title: Steering Linkages, Steering Wheel Supports, Steering Flat Plate
+description: Cornell Electric Vehicles 2026 Projects (steering lead)
+image: chunk-0-img-0.jpeg
+technologies: Autodesk Inventor, Ansys
+---
 
 This year I have 3 main projects alongside managing interfacing and design for the steering sub-projects. These projects are all for my steering subsystem of mechanical of Cornell Electric Vehicles that designs a vehicle to compete in ShellEco Marathon. One of those projects is Steering linkages: including Ackerman calculations and FEA, Steering flat plate to allow more precise mounting connections (expanded on later) and pocketed based off mounting holes for each project and repeated Ansys modeling to check deflection under main loading conditions (bump, brake, turn) to ensure pocketing is making minimal deflection (not currently Finalized due to autobrake and acceleration pedal mounting holes changing). My last project is steering wheel supports which are being redesigned because we chose to redesign our car’s baseplate to remove wheel wells for simpler manufacturing but this removed previous connection points for steering wheel structure alongside decreasing our resistance to bending. This was redesigned to be a truss structure above the pedals which also reduces the moment arm associated with the supports from the previous design. See Sections Below for Pictures and more details.
 
