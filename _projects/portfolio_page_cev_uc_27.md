@@ -2,7 +2,7 @@
 layout: project
 title: Steering Linkages, Steering Wheel Supports, Steering Flat Plate
 description: Cornell Electric Vehicles 2026 Projects (steering lead)
-image: chunk-0-img-0.jpeg
+image: /assets/steering_architecture_overview.png
 technologies: Autodesk Inventor, Ansys
 ---
 
@@ -12,7 +12,7 @@ This year I am steering lead for the mechanical subteam of Cornell Electric Vehi
 
 ### Core Projects:
 1. **Steering Linkages:** Including Ackermann calculations and Finite Element Analysis (FEA).
-2. **Steering Flat Plate:** Designed to allow more precise mounting connections and pocketed based on mounting holes for each project. Repeated Ansys modeling was performed to check deflection under main loading conditions (bump, brake, turn) to ensure pocketing results in minimal deflection *(currently undergoing finalization due to auto-brake and acceleration pedal mounting hole revisions)*.
+2. **Steering Flat Plate:** Designed to allow more precise mounting connections and pocketed based on mounting holes for each project. Repeated Ansys modeling was performed to check deflection under main loading conditions (bump, brake, turn) to ensure pocketing results in minimal deflection.
 3. **Steering Wheel Supports:** Redesigned following a baseplate redesign that removed wheel wells for simpler manufacturing. This change removed previous connection points for the steering wheel structure and decreased resistance to bending. The new design features a truss structure positioned above the pedals, reducing the moment arm associated with the supports compared to the previous design.
 
 ---
@@ -20,27 +20,26 @@ This year I am steering lead for the mechanical subteam of Cornell Electric Vehi
 ## Steering Subsystem Geometry & Architecture
 
 ### System Architecture Overview
-![Overall Steering Architecture](assets/steering_architecture_overview.png)
+<img src="{{ '/assets/steering_architecture_overview.png' | relative_url }}" alt="Overall Steering Architecture" style="display: block; margin: 1rem auto; width: 650px; max-width: 100%;" />
 
 ---
 
 ## Steering Linkages
-
-![Steering Linkage Assembly](assets/steering_linkages_top_view.png)
+<img src="{{ '/assets/steering_linkages_top_view.png' | relative_url }}" alt="Steering Linkage Assembly" style="display: block; margin: 1rem auto; width: 650px; max-width: 100%;" />
 
 ### Goals and Rule Requirements
-- [x] Achieve close to pure Ackermann geometry.
-- [x] Optimize Ackermann for a $10\text{ m}$ turning radius.
-- [x] Achieve $4.5\text{ m}$ turning radius minimum capability.
-- [x] Prevent interfacing issues with brake and accelerator pedals.
-- [x] Implement a steering plate for easier, precise hole spacing and assembly.
-- [x] Two-hand operation.
-- [x] Steering radius $< 6\text{ m}$.
-- [x] Minimal mechanical play.
+- Achieve close to pure Ackermann geometry.
+- Optimize Ackermann for a 10 m turning radius.
+- Achieve 4.5 m turning radius minimum capability.
+- Prevent interfacing issues with brake and accelerator pedals.
+- Implement a steering plate for easier, precise hole spacing and assembly.
+- Two-hand operation.
+- Steering radius &lt; 6 m.
+- Minimal mechanical play.
 
 ### Design Parameters
-* **Tie Rod Length:** $13.27\text{ in}$
-* **Target Ackermann Percentage:** $104\%$
+* **Tie Rod Length:** 13.27 in
+* **Target Ackermann Percentage:** 104%
 
 ---
 
@@ -49,65 +48,64 @@ This year I am steering lead for the mechanical subteam of Cornell Electric Vehi
 ### Ackermann Calculations
 
 #### Pure Inner Wheel Turning Radius
-$$R_i = \sqrt{\left(R - \frac{w}{2}\right)^2 + L^2}$$
+R<sub>i</sub> = &radic;[ (R - w/2)<sup>2</sup> + L<sup>2</sup> ]
 
-$$R_i = \sqrt{\left(6 - \frac{0.44}{2}\right)^2 + 1.502^2} = 9.7815\text{ m}$$
+R<sub>i</sub> = &radic;[ (6 - 0.44/2)<sup>2</sup> + 1.502<sup>2</sup> ] = **9.7815 m**
 
 #### Pure Outer Wheel Turning Radius
-$$R_o = \sqrt{\left(R + \frac{w}{2}\right)^2 + L^2}$$
+R<sub>o</sub> = &radic;[ (R + w/2)<sup>2</sup> + L<sup>2</sup> ]
 
-$$R_o = \sqrt{\left(10 + \frac{0.44}{2}\right)^2 + 1.502^2} = 10.0431\text{ m}$$
+R<sub>o</sub> = &radic;[ (10 + 0.44/2)<sup>2</sup> + 1.502<sup>2</sup> ] = **10.0431 m**
 
 #### Theoretical Steering Angles
-* **Inner Steering Angle ($\delta_i$):**
-  $$\delta_i = \sin^{-1}\left(\frac{L}{R_i}\right) = \sin^{-1}\left(\frac{1.502}{9.7815}\right)$$
+* **Inner Steering Angle (&delta;<sub>i</sub>):**
+  &delta;<sub>i</sub> = arcsin( L / R<sub>i</sub> ) = arcsin( 1.502 / 9.7815 )
 
-* **Outer Steering Angle ($\delta_o$):**
-  $$\delta_o = \sin^{-1}\left(\frac{L}{R_o}\right) = \sin^{-1}\left(\frac{1.502}{10.0431}\right) = 8.269^\circ$$
+* **Outer Steering Angle (&delta;<sub>o</sub>):**
+  &delta;<sub>o</sub> = arcsin( L / R<sub>o</sub> ) = arcsin( 1.502 / 10.0431 ) = **8.269&deg;**
 
 #### Ackermann Percentage Evaluation
 $$\text{Ackermann } \% = \frac{(\delta_i - \delta_o)_{\text{actual}}}{(\delta_i - \delta_o)_{\text{ideal}}} \times 100$$
 
 From CAD Sketch:
-* $\delta_i = 9.00^\circ$
-* $\delta_o = 8.39^\circ$
+* &delta;<sub>i</sub> = 9.00&deg;
+* &delta;<sub>o</sub> = 8.39&deg;
 
 $$\text{Ackermann } \% = \frac{9.00 - 8.39}{8.833 - 8.269} \times 100 = 109.929\% \approx 110\%$$
 
-*Note: Ackermann Steering is calibrated at $110\% \text{ @ } 10\text{ m}$. Actual target calculation is revised to $104\%$ due to the suspension-tierod interface being moved closer to the rack and pinion to resolve packaging issues.*
+*Note: Ackermann Steering is calibrated at 110% @ 10 m. Actual target calculation is revised to 104% due to the suspension-tierod interface being moved closer to the rack and pinion to resolve packaging issues.*
 
 ---
 
-### Pinion Travel ($4.5\text{ m}$ Turn Radius Requirement)
+### Pinion Travel (4.5 m Turn Radius Requirement)
 
-$$\tan \delta = \frac{L}{R}$$
+tan(&delta;) = L / R
 
-For $L = 1.50\text{ m}$ and $R = 4.5\text{ m}$:
-$$\delta = 18.46^\circ$$
-$$\theta_r = 28.46^\circ + 18.46^\circ = 46.88^\circ$$
+For L = 1.50 m and R = 4.5 m:
+* &delta; = 18.46&deg;
+* &theta;<sub>r</sub> = 28.46&deg; + 18.46&deg; = 46.88&deg;
 
-$$y = r \cdot \sin(46.8^\circ) - \sin(28.4^\circ)$$
-$$\Delta y = 72.4\text{ mm} = 2.85\text{ in} \quad \text{(per side)}$$
+y = r &middot; sin(46.8&deg;) - sin(28.4&deg;)  
+**&Delta;y = 72.4 mm = 2.85 in (per side)**
 
-* **Total Required Rack Travel:** $\ge 5.7\text{ in}$
+* **Total Required Rack Travel:** &ge; 5.7 in
 
 ---
 
 ## Structural Analysis & Simulation (FEA)
 
 ### Tie Rod FEA
-![Tie Rod Finite Element Analysis](assets/tie_rod_fea_analysis.png)
+<img src="{{ '/assets/tie_rod_fea_analysis.png' | relative_url }}" alt="Tie Rod Finite Element Analysis" style="display: block; margin: 1rem auto; width: 650px; max-width: 100%;" />
 
-* **Load Condition:** $70.62\text{ lbf}$ applied axially from rack and pinion.
+* **Load Condition:** 70.62 lbf applied axially from rack and pinion.
 * **Material:** Aluminum 6061
 * **Factor of Safety (FOS):** 15
-* **Max Deformation:** $0.00298\text{ mm}$
+* **Max Deformation:** 0.00298 mm
 
 ---
 
 ## Steering Wheel Supports
-
-![Steering Wheel Support Structure](assets/steering_wheel_support_cad.png)
+<img src="{{ '/assets/steering_wheel_support_cad.png' | relative_url }}" alt="Steering Wheel Support Structure" style="display: block; margin: 1rem auto; width: 650px; max-width: 100%;" />
 
 ### Design Strategy & Revisions
 This design replaces previous iterations that anchored to a carbon fiber tube spanning between the wheel wells (removed following the baseplate redesign). 
@@ -115,23 +113,22 @@ This design replaces previous iterations that anchored to a carbon fiber tube sp
 An initial design attempted to anchor the supports to the aerodynamic side shell; however, hand calculations revealed excessive forces for non-load-bearing aero panels. The final iteration builds down directly to the carbon fiber baseplate, which is thicker and engineered for structural loads. The steering wheel shaft interfaces with the rack and pinion via a U-joint.
 
 ### Analysis & Hand Calculations
-* **Steering Torque:** $12\text{ N}\cdot\text{m}$
-* **Max Moment at Support:** $14\text{ N}\cdot\text{m}$
+* **Steering Torque:** 12 N&middot;m
+* **Max Moment at Support:** 14 N&middot;m
 
 ---
 
 ## Steering Flat Plate Analysis
-
-![Steering Flat Plate Deflection FEA](assets/steering_flat_plate_fea.png)
+<img src="{{ '/assets/steering_flat_plate_fea.png' | relative_url }}" alt="Steering Flat Plate Deflection FEA" style="display: block; margin: 1rem auto; width: 650px; max-width: 100%;" />
 
 ### Design & Function
 The primary objective of the steering flat plate is to establish exact hole placements across multiple subsystem components. Direct drilling into the carbon baseplate introduces positioning errors, which historically caused assembly inefficiencies.
 
-* **Plate Thickness:** $0.25\text{ in}$
-* **Hardware:** Pressed with $\frac{1}{4}\text{-}28$ flush nuts
-* **Offset:** Elevated $0.25\text{ in}$ off the baseplate via side and center standoffs.
+* **Plate Thickness:** 0.25 in
+* **Hardware:** Pressed with 1/4-28 flush nuts
+* **Offset:** Elevated 0.25 in off the baseplate via side and center standoffs.
 * **Factor of Safety (FOS):** 15
-* **Max Total Deformation (FEA):** $0.11236\text{ mm}$
+* **Max Total Deformation (FEA):** 0.11236 mm
 
 ---
 
