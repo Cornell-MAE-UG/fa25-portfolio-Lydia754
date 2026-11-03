@@ -4,6 +4,7 @@ title: Statics Piston-Rod Maximization
 description: Statics class project 
 technologies: [google sheets]
 image: /assets/images/PistonMechanism.png
+category: class
 ---
 
 
