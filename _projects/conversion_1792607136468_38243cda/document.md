@@ -11,8 +11,9 @@ This year I have 3 main projects alongside managing interfacing and design for t
 ## Steering Subsystem Geometry:
 
 Images of overall Architecture from Preliminary Design Review: to be updated with pictures from Critical Design Review after CDR occurs.
+![Figures]({{ "/assets/images/trapfig1.png" | relative_url }})
 
-![chunk-0-img-0.jpeg](chunk-0-img-0.jpeg)
+![chunk-0-img-0.jpeg]("/assets/images/chunk-0-img-0.jpeg)
 
 ![chunk-0-img-1.jpeg](chunk-0-img-1.jpeg)
 
